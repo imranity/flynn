@@ -2,17 +2,14 @@
 title: "This Week in Flynn"
 date: December 29, 2014
 ---
-We deployed many great bug fixes last week, aided by the Go race detector. Running that tool against our Continuous Integration system helped close a longstanding issue with iptables and many small races and leaks.
-
-We've had several requests to add buildpack caching to Flynn, and that change landed last week. Regular deploys of your apps should run much more quickly now.
-
-Thanks to some improvement in etcd 2.0rc1, we've also added `flynn-host init`, which brings some important tooling for clusters. The commands are well-documented in code, but please [let us know](mailto:contact@flynn.io) if something doesn't make sense.
 
 ## Changes
 
-* Buildpack builds now cache dependencies between deploys, causing significant speedups.
-* We upgraded to etcd 2.0rc1 and added the `flynn-host init` command which makes
-  it much easier to configure clusters correctly.
+We pushed many bug fixes last week, aided by the Go race detector. Running that tool against our Continuous Integration system helped fix many small races and leaks.
+
+We've had several requests to add buildpack caching to Flynn, and that change landed last week. Regular deploys of your apps should run much more quickly now.
+
+Thanks to some improvements in etcd 2.0rc1, we've also added `flynn-host init`, which makes configuring clusters more reliable.
 
 ### Enhancements
 
